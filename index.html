@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .d1{
+            position: fixed;
+            height: 670px;
+            width: 400px;
+            background-color: black;
+            border-top: 5px solid greenyellow;
+            border-left: 5px solid greenyellow;
+            border-right: 5px solid green;
+            border-bottom: 5px solid green;
+        }
+        .home{
+            color: white;
+            position: fixed;
+            top: 300px;
+            left: 160px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .home:hover{
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+        }
+        .about{
+            color: white;
+            position: fixed;
+            top: 370px;
+            left: 160px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .about:hover{
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+        }
+        .resume{
+            color: white;
+            position: fixed;
+            top: 440px;
+            left: 160px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .resume:hover{
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+        }
+        .intrest{
+            color: white;
+            position: fixed;
+            top: 510px;
+            left: 160px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .intrest:hover{
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+        }
+        .contact{
+            color: white;
+            position: fixed;
+            top: 580px;
+            left: 160px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .contact:hover{
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+        }
+        .im1{
+            height: 200px;
+            width: 200px;
+            position: fixed;
+            top: 80px;
+            left: 100px;
+            border-radius: 50%;
+            border-left: 5px solid green;
+            border-bottom: 5px solid green;
+        }
+
+        /* HOME */
+        #dhome{
+            height: 300px;
+            width: 600px;
+            position: absolute;
+            left: 450px;
+            top: 100px;
+        }
+        .im1:hover{
+            border-right:5 px solid greenyellow ;
+            border-top: 5px solid greenyellow;
+            border-left: 0px;
+            border-bottom: 0px;
+        }
+        .p1{
+            font-size: 60px;
+            font-weight: bolder;
+            position: absolute;
+            top: 10px;
+            left: 125px;
+        }
+        .p2{
+            font-size: 45px;
+            font-weight: bolder;
+            position: absolute;
+            top: 145px;
+            left: 200px;
+        }
+        .drop{
+            height: 40px;
+            width: 250px;
+            background-color: black;
+            border-top: 5px solid grey;
+            border-bottom: 5px solid grey;
+            border-left: 5px solid grey;
+            border-right: 5px solid grey;
+            position: absolute;
+            top: 300px;
+            left: 250px;
+        }
+        .container{
+            height: 260px;
+            position: absolute;
+            top: 150px;
+            left:250px ;
+            display: inline-block;
+        }
+
+        .dab{
+            text-decoration: none;
+            font-size: xx-large;
+            color: grey;
+        }
+        .drop:hover{
+            border-top: 5px solid greenyellow;
+            border-left: 5px solid greenyellow;
+            border-right: 5px solid green;
+            border-bottom: 5px solid green;
+        }
+        .dab:hover{
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+        }
+        i:focus {
+            background-color: green;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        /* about */
+        #dabout{
+            height: 300px;
+            width: 750px;
+            position: absolute;
+            top: 1200px;
+            left: 450px;
+        }
+        .p3{
+            font-size: 65px;
+            font-weight: bolder;
+            position: absolute;
+            top: 80px;
+            left: 230px;
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 5px green;
+            box-shadow: 0px 0px 5px black;
+        }
+        .p4{
+            font-size: 25PX;
+            position: absolute;
+            left: 50px;
+            top: 250px;
+        }
+        .p5{
+            font-size: 25PX;
+            position: absolute;
+            left: 50px;
+            top: 350px;
+        }
+
+
+        /* RESUME */
+        #dresume{
+            position: absolute;
+            top: 1800px;
+            left: 450px;
+            height: 300px;
+            width: 900px;
+            /* background-color: antiquewhite; */
+        }
+        .p6{
+            font-size: 65px;
+            font-weight: bolder;
+            position: absolute;
+            /* top: 80px; */
+            left: 230px;
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 5px green;
+            box-shadow: 0px 0px 5px black;
+        }
+        .school{
+            height: 300px;
+            width: 350px;
+            position: absolute;
+            top: 200px;
+            left: 430px;
+            box-shadow: 0px 0px 10px green;
+        }
+        .college{
+            height: 300px;
+            width: 350px;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            box-shadow: 0px 0px 10px green;
+        }
+        .p7{
+            font-size: 65px;
+            font-weight: bolder;
+            position: absolute;
+            top: 20px;
+            left: 300px;
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 5px green;
+            box-shadow: 0px 0px 5px black;
+        }
+        .html{
+            height: 10px;
+            width: 300px;
+            background-color: rgb(170, 168, 168);
+            border-radius: 20px;
+            position: absolute;
+            top: 225px;
+            left: 300px;
+        }
+        .css{
+            height: 10px;
+            width: 300px;
+            background-color: rgb(170, 168, 168);
+            border-radius: 20px;
+            position: absolute;
+            top: 305px;
+            left: 300px;
+        }
+        .php{
+            height: 10px;
+            width: 300px;
+            background-color: rgb(170, 168, 168);
+            border-radius: 20px;
+            position: absolute;
+            top: 390px;
+            left: 300px;
+        }
+        .js{
+            height: 10px;
+            width: 300px;
+            background-color: rgb(170, 168, 168);
+            border-radius: 20px;
+            position: absolute;
+            top: 475px;
+            left: 300px;
+        }
+
+
+
+
+        /* INTREST */
+        #dintrest{
+            height: 500px;
+            width: 800px;
+            position: absolute;
+            top: 1500px;
+            left: 10px;
+        }
+        .p8{
+            font-size: 65px;
+            font-weight: bolder;
+            position: absolute;
+            top: 20px;
+            left: 240px;
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 5px green;
+            box-shadow: 0px 0px 5px black;
+        }
+        .p9{
+            font-size: 25px;
+            position: absolute;
+            top: 200px;
+        }
+        .photo1{
+            height: 300px;
+            width: 320px;
+            position: absolute;
+            top: 400px;
+            left: 10px;
+            box-shadow: 0px 0px 10px black;
+            filter: grayscale(100%);
+            background-size: cover;
+        }
+        .photo1:hover{
+            filter: grayscale(0%);
+            height: 600px;
+            width: 900px;
+            z-index: 1;
+            
+        }
+        .photo2{
+            height: 300px;
+            width: 320px;
+            position: absolute;
+            top: 400px;
+            left: 300px;
+            box-shadow: 0px 0px 10px black;
+            filter: grayscale(100%);
+            background-size: cover;
+        }
+        .photo2:hover{
+            filter: grayscale(0%);
+            height: 600px;
+            width: 900px;
+            z-index: 2;
+            position: absolute;
+            left: 10px;
+        }
+        .photo3{
+            height: 300px;
+            width: 320px;
+            position: absolute;
+            top: 400px;
+            left: 600px;
+            box-shadow: 0px 0px 10px black;
+            filter: grayscale(100%);
+            background-size: cover;
+        }
+        .photo3:hover{
+            filter: grayscale(0%);
+            height: 600px;
+            width: 900px;
+            z-index: 3;
+            position: absolute;
+            left: 10px;
+        }
+        .photo4{
+            height: 300px;
+            width: 320px;
+            position: absolute;
+            top: 700px;
+            left: 10px;
+            box-shadow: 0px 0px 10px black;
+            filter: grayscale(100%);
+            background-size: cover;
+        }
+        .photo4:hover{
+            filter: grayscale(0%);
+            height: 600px;
+            width: 900px;
+            z-index: 2;
+            position: absolute;
+            top: 400px;
+        }
+        .photo5{
+            height: 300px;
+            width: 320px;
+            position: absolute;
+            top: 700px;
+            left: 300px;
+            box-shadow: 0px 0px 10px black;
+            filter: grayscale(100%);
+            background-size: cover;
+        }
+        .photo5:hover{
+            filter: grayscale(0%);
+            height: 600px;
+            width: 900px;
+            z-index: 2;
+            position: absolute;
+            top: 400px;
+            left: 10px;
+        }
+        .photo6{
+            height: 300px;
+            width: 320px;
+            position: absolute;
+            top: 700px;
+            left: 600px;
+            box-shadow: 0px 0px 10px black;
+            filter: grayscale(100%);
+            background-size: cover;
+        }
+        .photo6:hover{
+            filter: grayscale(0%);
+            height: 600px;
+            width: 900px;
+            z-index: 2;
+            position: absolute;
+            top: 400px;
+            left: 10px;
+        }
+        .visual{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 400px;
+            left: 250px;
+        }
+
+
+
+
+
+        /* CONTACT */
+        #dcontact{
+            height: 500px;
+            width: 800px;
+            position: absolute;
+            top: 2800px;
+            left: 50px;
+        }
+        .p10{
+            font-size: 65px;
+            font-weight: bolder;
+            position: absolute;
+            top: 20px;
+            left: 240px;
+            background-image: linear-gradient(green,greenyellow);
+            background-clip: text;
+            color: transparent;
+            text-shadow: 1px 1px 5px green;
+            box-shadow: 0px 0px 5px rgb(155, 146, 146);   
+        }
+        .add{
+            height: 250px;
+            width: 250px;
+            box-shadow: 0px 0px 10px black;
+            position: absolute;
+            top: 250px;
+            left: -40px;
+            border-bottom: 5px solid green;
+        }
+        .add:hover{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: 230px;
+            left: -40px;
+            border-bottom: 5px solid greenyellow;
+            border-top: 5px solid greenyellow;
+            border-right: 5px solid greenyellow;
+            border-left: 5px solid greenyellow;
+
+        }
+        .lo{
+            height: 50px;
+            width: 50px;
+           position: absolute;
+           top: 50px;
+           left: 100px;
+        }
+        .phone{
+            height: 250px;
+            width: 250px;
+            box-shadow: 0px 0px 10px black;
+            position: absolute;
+            top: 250px;
+            left: 250px;
+            border-bottom: 5px solid green;
+        }
+        .phone:hover{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: 230px;
+            left: 250px;
+            border-bottom: 5px solid greenyellow;
+            border-top: 5px solid greenyellow;
+            border-right: 5px solid greenyellow;
+            border-left: 5px solid greenyellow;
+
+        }
+        .ph{
+            height: 45px;
+            width: 45px;
+           position: absolute;
+           top: 50px;
+           left: 100px;
+        }
+        .email{
+            height: 250px;
+            width: 250px;
+            box-shadow: 0px 0px 10px black;
+            position: absolute;
+            top: 250px;
+            left: 550px;
+            border-bottom: 5px solid green;
+        }
+        .email:hover{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: 230px;
+            left: 550px;
+            border-bottom: 5px solid greenyellow;
+            border-top: 5px solid greenyellow;
+            border-right: 5px solid greenyellow;
+            border-left: 5px solid greenyellow;
+
+        }
+        .em{
+            height: 50px;
+            width: 50px;
+           position: absolute;
+           top: 50px;
+           left: 100px;
+        }
+    .t1{
+        position: absolute;
+        top: 600px;
+        left: 300px;
+        height: 30px;
+        width: 250px;
+    }
+    .t1:hover{
+        border-bottom: 5px solid green;
+        border-top: 5px solid green;
+        border-left: 5px solid greenyellow;
+        border-right: 5px solid greenyellow;
+    }
+    .t2:hover{
+        border-bottom: 5px solid green;
+        border-top: 5px solid green;
+        border-left: 5px solid greenyellow;
+        border-right: 5px solid greenyellow;
+    }
+    .t2{
+        position: absolute;
+        top: 600px;
+        left: 570px;
+        height: 30px;
+        width: 250px;
+    }
+    #t3{
+        position: absolute;
+        top: 680px;
+        left: 300px;
+        height: 200px;
+        width: 520px;
+    }
+    #t3:hover{
+        border-bottom: 5px solid green;
+        border-top: 5px solid green;
+        border-left: 5px solid greenyellow;
+        border-right: 5px solid greenyellow;
+    }
+    .b1{
+        height: 50px;
+        width: 150px;
+        position: absolute;
+        top: 900px;
+        left: 675px;
+        background-image: linear-gradient(green,greenyellow);
+    }
+    .b1:hover{
+        border-bottom: 5px solid green;
+        border-top: 5px solid green;
+        border-left: 5px solid greenyellow;
+        border-right: 5px solid greenyellow;
+        color: white;
+        background-image: linear-gradient(rgb(46, 45, 45),grey);
+    }
+    .twi{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 1000px;
+        left: 250px;
+    }
+     .face{
+        height: 40px;
+        width: 40px;
+          position: absolute;
+        top: 995px;
+        left: 300px;
+    }
+     .linked{
+        height: 30px;
+        width: 30px;
+          position: absolute;
+        top: 1000px;
+        left: 350px;
+    }
+     .ema{
+        height: 25px;
+        width: 25px;
+          position: absolute;
+        top: 1000px;
+        left: 400px;
+    }
+    .twi:hover,.face:hover,.linked:hover,.ema:hover{
+        box-shadow: 0px 0px 5px black;
+    }
+    .footer{
+        height: 100px;
+        width: 920px;
+        background-color: #cfcfcf;
+        position: absolute;
+        top: 4000px;
+        font-size:30px;
+        left: -30px;
+        text-align: center;
+        align-content: center;
+    }
+.container h1 {
+  /* color: #fff; */
+  /* position: absolute; */
+position: relative;
+top: 50px;
+left: 40px;
+font-size: 35px;
+  /* font-family: monospace; */
+  overflow: hidden; 
+  border-right: .15em solid green; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green }
+}
+
+    </style>
+</head>
+<body style="display: flex;">
+    <div class="d1"></div>
+    <img class="im1" src="IMG_20220619_191217.jpg" alt="">
+    <a class="home" href="#dhome">HOME</a>
+    <a class="about" href="#dabout">ABOUT</a>
+    <a class="resume" href="#dresume">EDUCATION</a>
+    <a class="intrest" href="#dintrest">INTEREST</a>
+    <a class="contact" href="#dcontact">CONTACT</a>
+    <div id="dhome"><p class="p1"><span style="background-image: linear-gradient(green,greenyellow);background-clip: text;color: transparent;">M</span>yself <span style="background-image: linear-gradient(green,greenyellow);background-clip: text;color: transparent;">D</span>ivyapriya</p>
+    <P class="p2">I'm <div class="container"><h1 style="background-image: linear-gradient(green,greenyellow);background-clip: text;color: transparent;font-weight: bold;">WEB DESIGNER</h1></div></P>
+<div class="drop"><a class="dab" href="#dabout">More about me</a><i class="fa-solid fa-caret-down fa-2xl" style="color: #cfcfcf;position: absolute;left: 220px;top: 18px;"></i></div></div>
+
+
+
+<!-- ABOUT -->
+ <div id="dabout">
+    <P class="p3">ABOUT ME</P>
+    <p class="p4">Hey all, This Divyapriya. I completed <span style="color: green;">BCA</span> from <span style="color: green;">SEETHALAKSHMI RAMASWAMI COLLEGE</span> in trichy with 78%.</p>
+    <p class="p5">I am flexible, relizble and posses time keeping skills.  I am an enthusiastic, self-motivated, responsible and hard working person.  I am able to work well both in a team environment as well as using own initiative.</p>
+</div>
+
+
+    <!-- RESUME -->
+     <div id="dresume">
+        <p class="p6">EDUCATION</p>
+        <div class="school"><p style="font-size: 30px;position: absolute;left: 50px;"><b>2021-2024</b></p>
+        <p style="font-size: 30px;position: absolute;top: 80px;left: 50px;"><i>Bachelor of Computer Applications</i></p>
+        <p style="font-size:large;position: absolute;top: 200px;left: 250px;"><b>78%</b></p>
+    <div style="height: 10px;width: 300px;background-color: rgb(170, 168, 168);border-radius: 20px;position: absolute;top: 250px;left: 20px;"><div style="height: 10px;width: 78%;background-image: linear-gradient(to left, green,greenyellow);border-radius: 20px;"></div></div></div>
+    <div class="college"><P style="font-size: 30px;position: absolute;left: 50px;"><b>2020-2021</b></P>
+        <p style="font-size:30px;position: absolute;top: 80px;left: 50px;"><i>Higher Secondary Course-Second year</i></p>
+        <p style="font-size:large;position: absolute;top: 200px;left: 250px;"><b>85%</b></p>
+        <div style="height: 10px;width: 300px;background-color: rgb(170, 168, 168);border-radius: 20px;position: absolute;top: 250px;left: 20px;"><div style="height: 10px;width: 85%;background-image: linear-gradient(to left, green,greenyellow);border-radius: 20px;"></div></div>
+    </div>
+    <div style="position: absolute;height: 500px;width: 820px;top: 600px;box-shadow: 0px 0px 10px green;left: 20px;">
+    <p class="p7">SKILLS</p>
+    <p style="font-size:xx-large;position: absolute;top: 180px;left: 150px;"><b>HTML</b></p>
+    <p style="position: absolute;top: 180px; left: 500px;"><b>80%</b></p>
+    <div class="html"><div style="height: 10px;width: 80%;background-image: linear-gradient(to left, green,greenyellow);border-radius: 20px;"></div></div>
+    <p style="font-size:xx-large;position: absolute;top: 260px;left: 150px;"><b>CSS</b></p>
+    <p style="position: absolute;top: 260px; left: 480px;"><b>70%</b></p>
+    <div class="css"><div  style="height: 10px;width: 70%;background-image: linear-gradient(to left, green,greenyellow);border-radius: 20px;"></div></div>
+    <p style="font-size:xx-large;position: absolute;top: 340px;left: 150px;"><b>PHP</b></p>
+    <p style="position: absolute;top: 340px; left: 430px;"><b>50%</b></p>
+    <div class="php"><div style="height: 10px;width: 50%;background-image: linear-gradient(to left, green,greenyellow);border-radius: 20px;"></div></div>
+    <p style="font-size:xx-large;position: absolute;top: 420px;left: 150px;"><b>JS</b></p>
+    <p style="position: absolute;top: 420px; left: 370px;"><b>25%</b></p>
+    <div class="js"><div style="height: 10px;width: 25%;background-image: linear-gradient(to left, green,greenyellow);border-radius: 20px;"></div></div>
+     </div>
+
+
+
+     <!-- INTREST -->
+      <div id="dintrest">
+        <p class="p8">INTEREST</p>
+        <p class="p9">Apart from being a <span style="background-image:linear-gradient(green,greenyellow);background-clip: text;color: transparent;">WEB DESIGNER.</span> I enjoy most of my time being outdoors.  I am intrested to planting the tree , flowers and vegtables plants. When forced indoors, I watch the movies and television shows.  I am aspiring chef and I spent my free time to cook the different varities. And my favourite hobby is Photography, some photography are, </p>
+    <img class="photo1" src="photo.jfif" alt="" >  
+    <img class="photo2" src="photo2.jfif" alt="">
+    <img class="photo3" src="photo3.jfif" alt="">
+    <img class="photo4" src="photo4.jfif" alt="">
+    <img class="photo5" src="photo5.jfif" alt="">
+    <img class="photo6" src="photo6.jfif" alt="">
+    </div>
+
+
+    <div id="dcontact">
+    <p class="p10">CONTACT</p>
+    <div class="add"><img class="lo" src="location-removebg-preview.png" alt=""><hr style="height: 3px;border-radius: 10px; width: 100px;position: absolute;top:110px;left: 80px;background-color: grey;">
+    <p style="font-size: larger;position: absolute;top: 120px; left: 10px;">3/52, Middle Street, Valaiyur, Mannachannalur,<br> Trichy-621 005.</p></div>
+    <div class="phone"><img class="ph" src="phone-removebg-preview.png" alt=""><hr style="height: 3px;border-radius: 10px; width: 100px;position: absolute;top:110px;left: 80px;background-color: grey;">
+    <p style="font-size: larger;position: absolute;top: 120px; left: 80px;">8148034760<br>8526109744</p></div>
+    <div class="email"><img class="em" src="email-removebg-preview.png" alt=""><hr style="height: 3px;border-radius: 10px; width: 100px;position: absolute;top:110px;left: 80px;background-color: grey;">
+        <p style="font-size: larger;position: absolute;top: 120px; left: 20px;">divyamahes2003@gmail.com</p></div>
+    <div style="height: 300px;width: 300px;position: absolute;top: 600px;left: -30px;box-shadow: 0px 0px 10px black;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62661.55576325951!2d78.71927756209827!3d11.012552882266911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf919e6605655%3A0xef5ad4a4da075afd!2sValaiyur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1728825206475!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <input type="text" class="t1" placeholder="Your name"><input class="t2" type="text" placeholder="Email address">
+<textarea name="" id="t3" rows="100" cols="10" placeholder="Write you message here...."></textarea>
+<button class="b1">Send Message</button>
+<img class="twi" src="twitter-removebg-preview.png" alt="">
+<img class="face" src="facebook-removebg-preview.png" alt="">
+<img class="linked" src="linedin-removebg-preview.png" alt="">
+<img class="ema" src="email-removebg-preview.png" alt="">
+</div>
+<footer class="footer">All rights deserved. &copy2024</footer>
+</body>
+</html>
